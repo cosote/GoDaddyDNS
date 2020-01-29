@@ -1,16 +1,16 @@
 {
   "manifestVersion": 1,
-  "id": "GoDaddyDnsZoneManager",
-  "name": "GoDaddy DNS zone manager",
+  "id": "GoDaddyDnsManager",
+  "name": "GoDaddy DNS Manager",
   "targets": [
       {
           "id": "Microsoft.VisualStudio.Services"
       }
   ],    
-  "publisher" : "ExpertaPreview",
-  "description": "Tasks package for GoDaddy DNS Zone",
+  "publisher" : "MarcosRamos",
+  "description": "Tasks package for GoDaddy DNS",
   "tags": [
-    "GoDaddy DNS Zone",
+    "GoDaddy DNS",
     "Build",
     "Release",
     "Azure Pipelines",
@@ -19,11 +19,11 @@
     "windows"
   ],
   "links":{
-      "support": { "uri": "https://github.com/expertasolutions/GoDaddyDns/issues" }
+      "support": { "uri": "https://github.com/mkswd/GoDaddyDns/issues" }
   },
   "repository": {
     "type" : "git",
-    "uri" : "https://github.com/expertasolutions/GoDaddyDns"
+    "uri" : "https://github.com/mkswd/GoDaddyDns"
   },
   "categories": [
       "Azure Pipelines"
