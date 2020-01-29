@@ -1,6 +1,6 @@
 # Objective
 
-This is my changes from the original GoDaddy DNS task from Experta Solution
+This is my changes from the original GoDaddy DNS task from Experta Solution.
 Tasks packages to manage GoDaddy DNS Zone from Azure DevOps release pipeline.
 
 ![MasterBuildStatus](https://dev.azure.com/experta/Community/_apis/build/status/expertasolutions.GoDaddyDNS?branchName=master)
