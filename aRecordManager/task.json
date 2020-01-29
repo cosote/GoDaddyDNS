@@ -1,14 +1,14 @@
 {
-    "id": "ac4aaf69-b3f3-4763-8d95-f4d8f3563e95",
+    "id": "20351007-43bc-45f7-8049-fd725477ed6a",
     "name": "ARecordManager",
     "friendlyName": "A record DNS Manager",
     "description": "Task to create/update an 'A' Dns Record",
     "helpMarkDown": "",
     "category": "Utility",
     "preview": false,
-    "author": "Solutions Experta Inc.",
+    "author": "Marcos Ramos",
     "version": {
-        "Major": 0,
+        "Major": 1,
         "Minor": 0,
         "Patch": 0
     },

@@ -2,7 +2,7 @@
   "manifestVersion": 1,
   "id": "GoDaddyDnsManager",
   "name": "GoDaddy DNS Manager",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "targets": [
       {
           "id": "Microsoft.VisualStudio.Services"
