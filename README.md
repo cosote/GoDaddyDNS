@@ -1,6 +1,6 @@
 # Objective
 
-This is my changes from the original GoDaddy DNS task from Experta Solution Inc.
+Those are my changes from the original GoDaddy DNS task from Experta Solution Inc. All text info are coming from them.
 Tasks packages to manage GoDaddy DNS Zone from Azure DevOps release pipeline.
 
 ## Tasks provides:
