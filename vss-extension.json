@@ -2,7 +2,7 @@
   "manifestVersion": 1,
   "id": "GoDaddyDnsManager",
   "name": "GoDaddy DNS Manager",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "targets": [
       {
           "id": "Microsoft.VisualStudio.Services"
@@ -40,6 +40,7 @@
   "files": [
       { "path": "aRecordManager" }, 
       { "path": "cnameRecordManager" },
+      { "path": "recordManager" },
       { "path": "img", "addressable": true }
   ],
   "badges": [
@@ -73,6 +74,16 @@
           ],
           "properties": {
               "name": "cnameRecordManager"
+          }
+      },
+      {
+          "id": "record-task",
+          "type": "ms.vss-distributed-task.task",
+          "targets": [
+              "ms.vss-distributed-task.tasks"
+          ],
+          "properties": {
+              "name": "recordManager"
           }
       },
       {

@@ -6,6 +6,7 @@ Tasks packages to manage GoDaddy DNS Zone from Azure DevOps release pipeline.
 ## Tasks provides:
 - A Record Manager
 - CName Record Manager
+- Record Manager
 
 ## Service Endpoint
 ![ServiceEndpoint](img/v0/ServiceEndpoint_v0.jpg)

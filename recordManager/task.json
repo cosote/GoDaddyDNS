@@ -1,24 +1,19 @@
 {
-    "id": "6525d72d-e370-43f0-b054-d8e55bffca90",
-    "name": "ARecordManager",
-    "friendlyName": "A record DNS Manager",
-    "description": "Task to create/update an 'A' Dns Record",
+    "id": "a05e0740-1829-4b22-955b-edf4232107ff",
+    "name": "RecordManager",
+    "friendlyName": "Record DNS Manager",
+    "description": "Task to create/update a Dns Record",
     "helpMarkDown": "",
     "category": "Utility",
     "preview": false,
-    "author": "Marcos Ramos",
+    "author": "Jens Bornemann",
     "version": {
         "Major": 2,
         "Minor": 0,
-        "Patch": 0
+        "Patch": 1
     },
-    "instanceNameFormat": "Manage A Dns record",
+    "instanceNameFormat": "Manage Dns record",
     "groups": [
-        {
-          "name": "subazadadmin",
-          "displayName": "GoDaddy account details",
-          "isExpanded": true
-        },
         {
             "name": "dnszonedetail",
             "displayName": "GoDaddy DNS zone details",
@@ -52,35 +47,51 @@
           "type": "string",
           "defaultValue": "",
           "required": true,
-          "helpMarkDown": "",
           "groupName": "dnszonedetail"
         },
         {
-          "name": "aName",
+          "name": "recordType",
+          "label": "Record type",
+          "type": "pickList",
+          "defaultValue": "A",
+          "options": {
+            "A": "A",
+            "CNAME": "CNAME",
+            "MX": "MX",
+			"TXT": "TXT",
+            "SRV": "SRV",
+			"AAAA": "AAAA",
+			"CAA": "CAA"
+          },
+          "required": true,
+          "groupName": "dnszonedetail"
+        },
+        {
+          "name": "recordName",
           "type": "string",
-          "label": "A record",
+          "label": "Record name",
           "defaultValue": "",
           "required": true,
           "helpMarkDown": "",
           "groupName": "dnszonedetail"
         },
         {
-          "name": "ipAddress",
+          "name": "value",
           "type":"string",
-          "label": "Ip Address",
-          "defaultValue":"1.0.0.1",
+          "label": "Value",
+          "defaultValue":"mydns",
           "required": true,
           "helpMarkDown":"",
           "groupName": "dnszonedetail"
         },
         {
-          "name":"ttl",
-          "type":"integer",
+          "name": "ttl",
+          "type": "integer",
           "label": "TTL (seconds)",
+          "defaultValue": 3600,
           "required": true,
-          "groupName":"dnszonedetail",
-          "defaultValue": "3600",
-          "visibleRule":"actionType = createUpdate"
+          "groupName": "dnszonedetail",
+          "visibleRule": "actionType = createUpdate"
         }
     ],
     "dataSourceBindings" : [
@@ -93,7 +104,7 @@
     "outputVariables" : [],
     "execution": {
         "Node": {
-          "target": "manageadnszone.js",
+          "target": "managerecord.js",
           "argumentFormat": ""
         }
       }

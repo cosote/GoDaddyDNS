@@ -38,6 +38,12 @@ steps:
     workingDir: cnameRecordManager
     verbose: false
 
+- task: Npm@1
+  displayName: 'RecordManager node_modules install'
+  inputs:
+    workingDir: recordManager
+    verbose: false
+
 - task: PackageAzureDevOpsExtension@2
   displayName: 'Package Extension: '
   inputs:
