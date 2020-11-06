@@ -6,11 +6,11 @@
     "helpMarkDown": "",
     "category": "Utility",
     "preview": false,
-    "author": "Marcos Ramos",
+    "author": "Next Guest",
     "version": {
         "Major": 2,
         "Minor": 0,
-        "Patch": 0
+        "Patch": 2
     },
     "instanceNameFormat": "Manage CNAME Dns record",
     "groups": [

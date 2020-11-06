@@ -2,13 +2,13 @@
   "manifestVersion": 1,
   "id": "GoDaddyDnsManager",
   "name": "GoDaddy DNS Manager",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "targets": [
       {
           "id": "Microsoft.VisualStudio.Services"
       }
   ],    
-  "publisher" : "MarcosRamos",
+  "publisher" : "NextGuest",
   "description": "Tasks package for GoDaddy DNS",
   "tags": [
     "GoDaddy DNS",
@@ -20,12 +20,12 @@
     "windows"
   ],
   "links":{
-      "support": { "uri": "https://github.com/mkswd/GoDaddyDns/issues" },
+      "support": { "uri": "https://github.com/cosote/GoDaddyDns/issues" },
       "privacypolicy": { "uri": "http://experta.ca/privacy/azuredevopsprivacy" } 
   },
   "repository": {
     "type" : "git",
-    "uri" : "https://github.com/mkswd/GoDaddyDns"
+    "uri" : "https://github.com/cosote/GoDaddyDns"
   },
   "categories": [
       "Azure Pipelines"

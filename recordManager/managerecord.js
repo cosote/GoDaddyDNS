@@ -113,7 +113,7 @@ try {
               
             r.on('end', () => {
                 var list = JSON.parse(body);
-                const index = list.findIndex(x=> x.name.toLowerCase() == mx.toLowerCase());
+                const index = list.findIndex(x=> x.name.toLowerCase() == name.toLowerCase());
                 if(index > -1){
                    list.splice(index, 1);
                 }

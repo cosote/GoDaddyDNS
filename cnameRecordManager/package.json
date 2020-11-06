@@ -1,12 +1,12 @@
 {
   "name": "CNAMERecordManager",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "description": "Tasks packages to manage GoDaddy DNS Zone from Azure DevOps release pipeline.",
   "main": "manageazurecnamerecord.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Marcos Ramos",
+  "author": "Next Guest",
   "license": "MIT",
   "dependencies": {
     "azure-pipelines-task-lib": "^2.7.0"
